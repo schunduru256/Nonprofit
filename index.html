@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const dropbtn = document.querySelector('.dropbtn');
+  const dropdownContent = document.querySelector('.dropdown-content');
+  const menuLinks = dropdownContent.querySelectorAll('a');
+
+  // Toggle the dropdown when the menu button is clicked
+  dropbtn.addEventListener('click', function() {
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Close the dropdown when clicking outside of the dropdown or menu button
+  document.addEventListener('click', function(event) {
+    if (!dropbtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+      dropdownContent.style.display = 'none';
+    }
+  });
+
+  // Close the dropdown when a menu item is clicked
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      dropdownContent.style.display = 'none'; // Close the dropdown
+    });
+  });
+});
+
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"></a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#why-harrisburg">Why Harrisburg, PA?</a>
+          <a href="#importance-project">Importance of the Project</a>
+          <a href="#program-components">Program Components</a>
+          <a href="#collaborative-efforts">Collaborative Efforts</a>
+          <a href="#expected-outcomes">Expected Outcomes</a>
+          <a href="#get-involved">Get Involved</a>
+          <a href="#conclusion">Conclusion</a>
+          <a href="#contact">Contact</a>
+          <a href="donation.html"><i class="fas fa-donate"></i> Make a Donation</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Refugee Civic Action Group</h1>
+    <p>Empowering Refugee Participation</p>
+  </header>
+
+  <section id="about">
+    <h2>Mission</h2>
+    <p>RCAG is a non-partisan organization committed to promoting civic engagement among refugees and new Americans in the U.S.</p>
+  
+    <h2>Goal</h2>
+    <p>Empower these communities through education, involvement, and leadership mentorship, fostering active citizenship.</p>
+  
+    <h2>Key Statistic</h2>
+    <p>Over 3.6 million refugees/asylees in the U.S. are eligible to vote, yet they face significant barriers due to lack of education, lack of experience, and growing political hostility. Central PA has over 60 thousand eligible voters, and only 13 percent are registered to vote in the upcoming election.</p>
+  </section>
+
+  <!-- Why Harrisburg, PA? -->
+  <section id="why-harrisburg">
+    <h2>Why Harrisburg, PA?</h2>
+    <p>We are piloting our program in Harrisburg, Pennsylvania, for two key reasons:</p>
+    <ul>
+      <li><strong>Swing Voting State:</strong> Pennsylvania is a crucial swing state in national elections.</li>
+      <li><strong>Refugee Population:</strong> Harrisburg is home to over 20,000 refugees, making it an ideal location for our pilot program.</li>
+    </ul>
+  </section>
+
+  <!-- Importance of the Project -->
+  <section id="importance-project">
+    <h2>Importance of the Project</h2>
+    <p>Civic engagement is crucial for the integration and empowerment of refugees and new Americans. Participating in civic activities helps refugees feel more connected to their communities and fosters a sense of belonging. It also enables them to advocate for their needs and contribute to local and national decision-making processes. Despite its importance, many refugees face barriers to civic engagement, including:</p>
+    <ul>
+      <li><strong>Lack of Knowledge:</strong> Many refugees are unaware of their civic rights and responsibilities.</li>
+      <li><strong>Language Barriers:</strong> Limited proficiency in English can hinder refugees’ ability to understand and engage in civic processes.</li>
+      <li><strong>Lack of Experience and Mentorship:</strong> Refugees often lack the experience and mentorship needed to navigate civic institutions and participate effectively in their communities.</li>
+    </ul>
+    <p>According to recent data, only about 54% of naturalized citizens voted in the 2016 presidential election, compared to 62% of U.S.-born citizens​ (Pew Research Center)​​ (Bipartisan Policy Center)​. This gap highlights the need for targeted programs to increase civic participation among refugees.</p>
+  </section>
+
+  <!-- Program Components -->
+  <section id="program-components">
+    <h2>Program Components</h2>
+    
+    <h3>1. Volunteer Mobilization:</h3>
+    <ul>
+      <li>Recruit college students, religious leaders, and community leaders.</li>
+      <li>Engage refugees through churches, community centers, mosques, and temples.</li>
+      <li>Assist with voter registration and provide information on civic rights and responsibilities.</li>
+    </ul>
+    
+    <h3>2. Fellowship and Internship Program for Students and Refugee Leaders:</h3>
+    <ul>
+      <li>Provide $2,000 to $4,000 scholarships each semester.</li>
+      <li>Provide yearly fellowship to religious leaders that focus on building leadership, learning about different branches of government, and understanding the importance of local civic society.</li>
+      <li>Place scholarship recipients in internships with local and state organizations.</li>
+      <li>Pair students with experienced mentors.</li>
+    </ul>
+    
+    <h3>3. Community Engagement Activities:</h3>
+    <ul>
+      <li>Organize workshops and seminars.</li>
+      <li>Host community events.</li>
+      <li>Facilitate attendance at school board meetings.</li>
+    </ul>
+    
+    <h3>4. Policy Writing and Community Projects:</h3>
+    <ul>
+      <li>Involve students in drafting policy proposals.</li>
+      <li>Encourage presentations to local government bodies.</li>
+      <li>Implement community projects based on refugee needs and interests.</li>
+    </ul>
+  </section>
+
+  <!-- Collaborative Efforts -->
+  <section id="collaborative-efforts">
+    <h2>Collaborative Efforts</h2>
+    <p>RCAG’s approach is deeply collaborative, working closely with various stakeholders to ensure the success of our programs:</p>
+    
+    <h3>Religious Leaders</h3>
+    <p>In the US, many refugees tend to engage with their ethnic-religious communities, including churches, mosques, Buddhist temples, and Hindu temples. These venues play a crucial role in helping refugees learn about local government and the significance of their involvement. RCAGs will collaborate with leaders from these religious institutions to engage refugees in their communities. This can involve recruiting religious leaders or hosting occasional activities, such as presentations, speeches, or cultural orientations, to connect with and support refugees.</p>
+    
+    <h3>College Campuses</h3>
+    <p>Engage college students and faculty to volunteer and mentor refugee students.</p>
+    
+    <h3>Community Centers</h3>
+    <p>Utilize local community centers as hubs for workshops, seminars, and community events. Partnership with organizations that are focused on integrating refugees into their new communities in the US and offering classes, seminars, and cultural orientation training in topics such as the importance of local legislative, local politics, etc.</p>
+  </section>
+
+  <!-- Expected Outcomes -->
+  <section id="expected-outcomes">
+    <h2>Expected Outcomes</h2>
+    <p>Our efforts will lead to the following expected outcomes:</p>
+    <ul>
+      <li><strong>Increased voter registration and turnout</strong> among refugee communities in Harrisburg, and over time in other states where refugees reside.</li>
+      <li><strong>Greater participation in local governance</strong> and community activities, allowing refugees to have a stronger voice in decisions affecting their lives.</li>
+      <li><strong>Enhanced educational and professional development</strong> for refugee students, leading to more opportunities and success in their careers.</li>
+      <li><strong>Strengthened community bonds</strong> and improved integration into local society, fostering greater social cohesion and mutual understanding.</li>
+    </ul>
+  </section>
+
+  <!-- Get Involved -->
+  <section id="get-involved">
+    <h2>Get Involved</h2>
+    <p>There are several ways you can contribute to the success of our program:</p>
+    <ul>
+      <li><strong>Volunteer:</strong> Join us in promoting civic engagement among refugees. Your time and expertise will make a difference.</li>
+      <li><strong>Donate:</strong> Support our programs with a financial contribution. Every donation helps us further our mission.</li>
+      <li><strong>Partner:</strong> Collaborate with us to make a greater impact. We welcome partnerships with organizations that share our goals.</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion -->
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>Refugee Civic Action Group (RCAG) aims to create a robust support system for former refugees, fostering their civic participation and enhancing their contributions to the community. By investing in education, mentorship, and community engagement, we can empower new Americans to become active, informed citizens. Your support and involvement will help us achieve these goals and make a meaningful impact in the lives of many.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <p><a href="https://www.google.com/maps/search/?q=305+Bard+Drive" target="_blank">Address: 305 Bard Drive</a></p>
+
+    <p><a href="tel:+12083165509">Phone: 208-316-5509</a></p>
+
+    <p><a href="mailto:lok.darjee@columbia.edu">Email: lok.darjee@columbia.edu</a></p>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

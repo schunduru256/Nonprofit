@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #c62828; /* Darker red background for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    color: white; /* Ensure the header text is white */
+  }
+  
+  h2, h3 {
+    color: #c62828; /* Darker red color for headings */
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #b71c1c; /* Darker red for links */
+    text-decoration: underline; /* Underline the link */
+    font-weight: bold; /* Make the link bold */
+  }
+  
+  a:hover {
+    color: #c62828; /* Even darker red when hovering */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .navbar .dropdown-content a {
+    color: black; /* Default color for links */
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar .dropdown-content a:hover {
+    background-color: #ddd;
+    color: #c62828; /* Set the color to black on hover */
+  }
+  
+  .navbar .dropdown-content a:active {
+    color: black; /* Set the color to black when the link is clicked */
+  }
+  
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+  }
+  
+  .dropbtn {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #c62828;
+  }
+  
+  /* Dropdown Menu Hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Donation Page Styles */
+  .donation-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donation-container h2 {
+    color: #c62828;
+  }
+  
+  .donation-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .donation-form label {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .donation-form input[type="number"],
+  .donation-form input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .donation-form input[type="submit"] {
+    background-color: #c62828;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .donation-form input[type="submit"]:hover {
+    background-color: #b2271d;
+  }
+  
+  .donation-form a {
+    text-align: center;
+    color: #c62828;
+    text-decoration: none;
+  }
+  
+  .donation-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styles */
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Updated styling for Contact section with underlined text */
+  #contact a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  #contact a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
