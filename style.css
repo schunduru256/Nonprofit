@@ -12,7 +12,33 @@ body {
     padding: 20px;
     text-align: center;
   }
-  
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-image {
+    align-self: flex-start;
+    margin-right: 20px; /* Adjust as needed */
+    max-width: 75px; /* Adjust the size of the image */
+    height: auto;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content h1,
+.text-content p {
+    margin: 0; /* Removes default margin */
+    padding: 5px 0; /* Adjust padding as needed */
+}
+
   h1 {
     margin: 0;
     color: white; /* Ensure the header text is white */
